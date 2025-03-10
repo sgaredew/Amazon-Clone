@@ -5,8 +5,9 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 dotenv.config();
 const stripe = require("stripe")(process.env.STRIPE_KEY);
-
+const { setGlobalOptions } = require("firebase-functions/v2");
 const app = express();
+setGlobalOptions({ maxInstances: 10 });
 app.use(cors({ origin: true }));
 
 app.get("/", (req, res) => {

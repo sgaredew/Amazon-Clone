@@ -1,0 +1,155 @@
+.footer__container  {
+    background-color: #232f3e;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .back_to_top {
+    background-color: #37475a;
+    text-align: center;
+    padding: 15px 0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .back_to_top:hover {
+    background-color: #4a5c72;
+  }
+  .back_to_top a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .back_to-_op p {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+  }
+  
+  .footer_links {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  
+  .footer_column {
+    width: 22%;
+    min-width: 150px;
+  }
+  
+  .footer_column h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer_column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer_column ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer_column ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer_column ul li a:hover {
+    text-decoration: underline;
+  }
+  .footer_bottom_container{
+    display: flex;
+    justify-content: center;
+    gap: 10px
+
+  }
+  
+  .footer_logo img {
+    width: 80px;
+    margin-right: 80px;
+    margin-top: 15px;
+  }
+  .footer_language-selector {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #3a4553;
+  }
+
+  .language_country {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 15px;
+    
+  }
+  
+  
+  .language_dropdown, .country_dropdown {
+    background: #232F3E;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding-top: 15px;
+  }
+  
+  .language_dropdown select, .country_dropdown select {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+  }
+  .language_dropdown{
+    padding: 13px;
+  }
+  .country_dropdown img{
+    width: 25px;
+  }
+  
+  .footer_bottom {
+    text-align: center;
+    padding: 15px;
+    background-color: #131a22;
+  }
+  
+  .footer_bottom p {
+    font-size: 12px;
+    color: #fff;
+    margin: 5px 0;
+    font-weight: bold;
+  }
+  
+
+  /* 📱 Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer_links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer_column {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .language_country {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .back_to_top {
+      bottom: 10px;
+      right: 10px;
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+  }
